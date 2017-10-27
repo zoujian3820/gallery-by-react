@@ -1,1 +1,1 @@
-# gallery-by-react.github.io
+# gallery-by-react
