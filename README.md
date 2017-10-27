@@ -1,5 +1,6 @@
 ##  gallery-by-react
-  这是一个用yo搭建的基于webpack-react-gallery开发的画廊应用，webpack使用的是@1.15.0
+  ![](https://github.com/zoujian3820/gallery-by-react/blob/master/src/images/yeoman.png "yeoman")
+  <br>这是一个用yo搭建的基于webpack-react-gallery开发的画廊应用，webpack使用的是@1.15.0
   <br>搭建环境和当前webpack版本不兼容，要使用其它版本需自行配置环境
   <br>到yeoman官网　http://yeoman.io/generators/　搜索寻找项目生成器（基于react和webpack构建的项目）
   <br>选择　[ react-webpack ]　项目，打开链接如下：
@@ -12,5 +13,4 @@
   <br>npm run start
   <br>http://localhost:8123/webpack-dev-server/
   <br>把连接粘贴到浏览器中即可，看到一个带有热加载的项目了
-  <br> ![](https://github.com/zoujian3820/gallery-by-react/blob/master/src/images/yeoman.png "yeoman")
   <br>具体npm run　操作可参考项目的中package.json文件
