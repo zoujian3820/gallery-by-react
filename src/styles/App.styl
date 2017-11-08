@@ -4,18 +4,19 @@ html, body
   width: 100%
   height: 100%
   .content
-    width: 100%
-    height: 100%
+    width 100%
+    height 100%
     .stage
       position: relative
-      width: 100%
-      height: 100%
+      width 100%
+      height 100%
       .img-sec
-        position: relative
-        width: 100%
-        height: 100%
-        overflow: hidden
-        background-color: #ddd
+        position relative
+        width 100%
+        height 100%
+        overflow hidden
+        background-color #ddd
+        perspective 1800px
         .img-figure
           position absolute
           width 320px
@@ -23,21 +24,50 @@ html, body
           margin 0
           padding 40px
           box-sizing border-box
+          cursor pointer
           background #fff
-          transform preserve-3d
+          transform-style preserve-3d
+          transition transform .6s ease-in-out, left .6s ease-in-out, top .6s ease-in-out
+          transform-origin 0 50% 0
+          .img-wrap
+            position relative
+            width 100%
+            padding-top 100%
+            img
+              position absolute
+              top 0
+              left 0
+              width 100%
+              height 100%
           &.is-inverse
-            transform rotateY(180deg)
+            transform translate(320px) rotateY(180deg)
           figcaption
             text-align center
             .img-title
               margin 20px 0 0 0
               color #a7a0a2
               font-size 16px
+            .img-back
+              position absolute
+              left 0
+              top 0
+              width 100%
+              height 100%
+              padding 50px 40px
+              overflow auto
+              color #a7a0a2
+              font-size 22px
+              line-height 1.25
+              text-align left
+              background-color: #fff
+              box-sizing border-box
+              transform rotateY(180deg) translateZ(1px)
+              backface-visibility hidden
       .controller-nav
-        position: absolute
-        left: 0
-        bottom: 30px
-        width: 100%
-        z-index: 101
-        text-align: center
+        position absolute
+        left 0
+        bottom 30px
+        width 100%
+        z-index 101
+        text-align center
 
