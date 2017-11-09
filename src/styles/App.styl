@@ -89,8 +89,21 @@ html, body
           background #aaa
           border-radius 50%
           transform scale(.5)
+          vertical-align middle
+          transition transform .6s ease-in-out, background-color .3s
           &.is-center
             background #888
             transform scale(1)
+            &::after
+              font-family "icons-turn-arrow"
+              content "\e600"
+              font-size 80%
+              color #fff
+              line-height 30px
+              -webkit-font-smoothing antialiased
+              -moz-osx-font-smoothing grayscale
+            &.is-inverse
+              background #555
+              transform rotateY(180deg)
 
 
