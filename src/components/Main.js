@@ -77,7 +77,19 @@ let ImgFigure = React.createClass({
     );
   }
 })
-//let yeomanImage = require('../images/yeoman.png');
+
+let ControllerUnit = React.createClass({
+  handleClick(e){
+
+    e.stopPropagation()
+    e.preventDefault()
+  },
+  render(){
+    return (
+      <span className="controller-unit" onClick={this.handleClick}></span>
+    )
+  }
+})
 
 //class AppComponent extends React.Component {
 let AppComponent = React.createClass({
@@ -274,6 +286,7 @@ let AppComponent = React.createClass({
         inverse={this.inverse(index)}
         center={this.center(index)}/>)
 
+      controllerUnits.push(<ControllerUnit key={index}></ControllerUnit>)
     }.bind(this))
 
     return (
