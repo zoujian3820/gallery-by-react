@@ -38,44 +38,21 @@ body .content .stage .img-sec .img-figure {
   width: 320px;
   height: 360px;
   margin: 0;
-  padding: 40px;
+  padding: 0;
   box-sizing: border-box;
   cursor: pointer;
-  background: #fff;
+  background: none;
   transform-style: preserve-3d;
   transition: transform 0.6s ease-in-out, left 0.6s ease-in-out, top 0.6s ease-in-out;
-  transform-origin: 0 50% 0;
 }
-html .content .stage .img-sec .img-figure .img-wrap,
-body .content .stage .img-sec .img-figure .img-wrap {
+html .content .stage .img-sec .img-figure .wrap-position,
+body .content .stage .img-sec .img-figure .wrap-position {
   position: relative;
-  width: 100%;
-  padding-top: 100%;
-}
-html .content .stage .img-sec .img-figure .img-wrap img,
-body .content .stage .img-sec .img-figure .img-wrap img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
   height: 100%;
+  width: 100%;
 }
-html .content .stage .img-sec .img-figure.is-inverse,
-body .content .stage .img-sec .img-figure.is-inverse {
-  transform: translate(320px) rotateY(180deg);
-}
-html .content .stage .img-sec .img-figure figcaption,
-body .content .stage .img-sec .img-figure figcaption {
-  text-align: center;
-}
-html .content .stage .img-sec .img-figure figcaption .img-title,
-body .content .stage .img-sec .img-figure figcaption .img-title {
-  margin: 20px 0 0 0;
-  color: #a7a0a2;
-  font-size: 16px;
-}
-html .content .stage .img-sec .img-figure figcaption .img-back,
-body .content .stage .img-sec .img-figure figcaption .img-back {
+html .content .stage .img-sec .img-figure .wrap-position .img-back,
+body .content .stage .img-sec .img-figure .wrap-position .img-back {
   position: absolute;
   left: 0;
   top: 0;
@@ -87,10 +64,60 @@ body .content .stage .img-sec .img-figure figcaption .img-back {
   font-size: 22px;
   line-height: 1.25;
   text-align: left;
-  background-color: #fff;
   box-sizing: border-box;
-  transform: rotateY(180deg) translateZ(1px);
+  transform: translate(320px) rotateY(180deg) translateZ(1px);
   backface-visibility: hidden;
+  transform-style: preserve-3d;
+  transition: transform 0.6s ease-in-out, left 0.6s ease-in-out, top 0.6s ease-in-out;
+  transform-origin: 0 50% 0;
+  background: #fff;
+}
+html .content .stage .img-sec .img-figure .wrap-position .img-content,
+body .content .stage .img-sec .img-figure .wrap-position .img-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 40px;
+  background: #fff;
+  transform-style: preserve-3d;
+  transition: transform 0.6s ease-in-out, left 0.6s ease-in-out, top 0.6s ease-in-out;
+  transform-origin: 0 50% 0;
+  backface-visibility: hidden;
+}
+html .content .stage .img-sec .img-figure .wrap-position .img-content figcaption,
+body .content .stage .img-sec .img-figure .wrap-position .img-content figcaption {
+  text-align: center;
+}
+html .content .stage .img-sec .img-figure .wrap-position .img-content figcaption .img-title,
+body .content .stage .img-sec .img-figure .wrap-position .img-content figcaption .img-title {
+  margin: 20px 0 0 0;
+  color: #a7a0a2;
+  font-size: 16px;
+}
+html .content .stage .img-sec .img-figure .wrap-position .img-content .img-wrap,
+body .content .stage .img-sec .img-figure .wrap-position .img-content .img-wrap {
+  position: relative;
+  width: 100%;
+  padding-top: 100%;
+}
+html .content .stage .img-sec .img-figure .wrap-position .img-content .img-wrap img,
+body .content .stage .img-sec .img-figure .wrap-position .img-content .img-wrap img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+html .content .stage .img-sec .img-figure.is-inverse .img-back,
+body .content .stage .img-sec .img-figure.is-inverse .img-back {
+  transform: translate(0px) rotateY(0deg);
+}
+html .content .stage .img-sec .img-figure.is-inverse .img-content,
+body .content .stage .img-sec .img-figure.is-inverse .img-content {
+  transform: translate(320px) rotateY(180deg);
 }
 html .content .stage .controller-nav,
 body .content .stage .controller-nav {

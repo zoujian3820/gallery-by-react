@@ -66,13 +66,17 @@ let ImgFigure = React.createClass({
 
     return (
       <figure className={imgFigureClassName} style={styleObj} onClick={this.handleClick}>
-        <div className="img-wrap"><img src={this.props.data.imageUrl} alt={this.props.data.title}/></div>
-        <figcaption>
-          <h2 className="img-title">{this.props.data.title}</h2>
+        <div className="wrap-position">
+          <div className="img-content">
+            <div className="img-wrap"><img src={this.props.data.imageUrl} alt={this.props.data.title}/></div>
+            <figcaption>
+              <h2 className="img-title">{this.props.data.title}</h2>
+            </figcaption>
+          </div>
           <div className="img-back" onClick={this.handleClick}>
             <p>{this.props.data.desc}</p>
           </div>
-        </figcaption>
+        </div>
       </figure>
     );
   }
