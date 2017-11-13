@@ -14,4 +14,7 @@
   <br>http://localhost:8123/webpack-dev-server/
   <br>把连接粘贴到浏览器中即可，看到一个带有热加载的项目了
   <br>具体npm run　操作可参考项目的中package.json文件
+  
+  #### github web服务在线地址
+  https://zoujian3820.github.io/gallery-by-react/
  
