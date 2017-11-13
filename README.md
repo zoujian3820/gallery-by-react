@@ -17,4 +17,5 @@
   
   #### github web服务在线地址
   https://zoujian3820.github.io/gallery-by-react/
+  ![](https://github.com/zoujian3820/gallery-by-react/blob/master/src/gitdemo.gif "github web server")
  
