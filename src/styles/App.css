@@ -113,11 +113,11 @@ body .content .stage .img-sec .img-figure .wrap-position .img-content .img-wrap 
 }
 html .content .stage .img-sec .img-figure.is-inverse .img-back,
 body .content .stage .img-sec .img-figure.is-inverse .img-back {
-  transform: translate(0px) rotateY(0deg);
+  transform: translate(0px) rotateY(0deg) translateZ(1px);
 }
 html .content .stage .img-sec .img-figure.is-inverse .img-content,
 body .content .stage .img-sec .img-figure.is-inverse .img-content {
-  transform: translate(320px) rotateY(180deg);
+  transform: translate(320px) rotateY(180deg) translateZ(1px);
 }
 html .content .stage .controller-nav,
 body .content .stage .controller-nav {
